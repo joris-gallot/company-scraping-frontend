@@ -17,3 +17,7 @@ cat .env.example > .env
 ```bash
 npm run dev
 ```
+
+## Deployed url
+
+[Visit](https://company-scraping-frontend.vercel.app/)
