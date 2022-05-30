@@ -1,7 +1,6 @@
 <script setup>
 import { inject, ref } from "vue";
 import CompanyCard from "./components/CompanyCard.vue";
-import Spinner from "./components/Spinner.vue";
 
 const api = inject("api");
 const search = ref("");
@@ -44,7 +43,9 @@ const searchCompany = async () => {
       </button>
     </div>
 
-    <div v-if="isLoading" class="flex justify-center w-full"><Spinner /></div>
+    <div v-if="isLoading" class="flex justify-center w-full">
+      <Spinner />
+    </div>
 
     <div v-else-if="!companies.length && fetched">No result.</div>
 
