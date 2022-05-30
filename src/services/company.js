@@ -4,4 +4,8 @@ export default {
   search(search) {
     return Api().get("search", { params: { q: search } });
   },
+
+  getDetails(slug) {
+    return Api().get(slug);
+  },
 };
